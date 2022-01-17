@@ -1,0 +1,21 @@
+/* font-family: 'Montserrat',
+sans-serif;
+font-family: 'Roboto Slab',
+serif;
+font-family: Wisdom Script Regular;
+font-family: DroidSerif; */
+
+
+@font-face {
+    font-family: 'Wisdom Script Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Wisdom Script Regular'), url('fonts/Wisdom Script AJ.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'DroidSerif';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Wisdom Script Regular'), url('fonts/DroidSerif-Regular.ttf') format('truetype');
+}
