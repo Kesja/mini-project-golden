@@ -5,17 +5,124 @@ serif;
 font-family: Wisdom Script Regular;
 font-family: DroidSerif; */
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
 
 @font-face {
     font-family: 'Wisdom Script Regular';
     font-style: normal;
     font-weight: normal;
-    src: local('Wisdom Script Regular'), url('fonts/Wisdom Script AJ.woff') format('woff');
+    src: url('/fonts/Wisdom Script AJ.woff') format("woff");
 }
 
 @font-face {
     font-family: 'DroidSerif';
-    font-style: normal;
+    src: url('/fonts/DroidSerif-Regular.ttf') format('truetype');
+}
+
+body {
+    max-width: 1400px;
+    margin: 0 auto;
+    font-family: 'Montserrat';
+}
+
+.main-button {
+    display: inline-block;
+    min-width: 240px;
+    min-height: 65px;
+    background-color: #fed136;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #fed136;
+    border-radius: 5px;
+    margin-top: 30px;
+    padding: 16px;
+}
+
+/* Navigation */
+
+.splash {
+    line-height: 41px;
+    padding: 26px 0;
+}
+
+.logo p {
+    font-family: 'Wisdom Script Regular';
+    font-size: 26px;
+    color: #fed136;
+    letter-spacing: 1.3px;
+    padding-left: 60px;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.menu li {
+    display: inline-block;
+    margin: 0 35px 0 0;
+}
+
+.menu a {
+    font-family: 'Montserrat';
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase;
+    width: 45px;
+    height: 10px;
+}
+
+/* SPLASH */
+
+.splash {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://i.postimg.cc/htP5FxRD/Background-Image.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1424px;
+    height: 729px;
+    position: relative;
+}
+
+.main-text {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 50px;
+}
+
+.main-text h2 {
+    font-size: 40px;
+    font-family: "DroidSerif";
+    font-style: italic;
+    color: white;
+    letter-spacing: -1px;
     font-weight: normal;
-    src: local('Wisdom Script Regular'), url('fonts/DroidSerif-Regular.ttf') format('truetype');
+    padding: 35px 0;
+}
+
+.main-text h1 {
+    font-size: 75px;
+    font-weight: 700;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    letter-spacing: -1.88px;
+    color: white;
+    padding: 20px 0;
+    margin-bottom: 30px;
 }
