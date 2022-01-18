@@ -118,8 +118,8 @@ body {
     background-size: cover;
     width: 100%;
     min-height: 729px;
-    ;
     position: relative;
+    background-attachment: fixed;
 }
 
 .main-text {
@@ -176,7 +176,7 @@ body {
 }
 
 .services .col {
-    margin-top: 70px;
+    margin-top: 30px;
     text-align: center;
 }
 
@@ -200,7 +200,7 @@ body {
 }
 
 .portfolio .main-title {
-    padding-top: 80px;
+    padding-top: 90px;
 }
 
 .title p {
@@ -236,8 +236,77 @@ body {
     font-style: italic;
 }
 
+/* FOOTER */
+
+.footer {
+    margin: 40px 40px;
+}
+
+.footer p {
+    line-height: 22px;
+    font-size: 14px;
+    letter-spacing: -0.35px;
+    color: #555555;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.social-media i {
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    margin: 0 3px;
+    border: 1px solid #222222;
+    background-color: #222222;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+}
+
+/* MEDIA */
+
 @media (min-width: 320px) and (max-width: 991px) {
+    .menu li {
+        margin: 0 20px 0 0;
+    }
+
+    .main-text h2 {
+        font-size: 25px;
+        padding-bottom: 20px;
+    }
+
+    .main-text h1 {
+        font-size: 50px;
+        padding-top: 5px;
+        margin-bottom: 15px;
+    }
+
+    .portfolio .main-title {
+        padding-top: 50px;
+        margin-top: 60px;
+        font-size: 35px;
+    }
+
+    .main-title {
+        font-size: 35px;
+        margin-top: 70px;
+    }
+
+    .title-text {
+        font-size: 14px;
+    }
+
     .card {
         width: 291px;
+    }
+
+    .footer {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .footer p {
+        padding-bottom: 15px;
     }
 }
